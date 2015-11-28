@@ -2,6 +2,22 @@ doctype html
 html
   head
     title= title
+    link(rel='stylesheet', href='/stylesheets/reset.css')
     link(rel='stylesheet', href='/stylesheets/style.css')
   body
+    header
+      ul
+        li
+          a(href='../') Home
+        li
+          a(href='../users') Users
+        li
+          a(href='../memes') Memes
+        li
+          a(href='../family') Family
+
     block content
+
+    script(src='/javascripts/jquery-1.11.3.min.js')
+    script(src='/javascripts/handlebars-v4.0.5.js')
+    script(src='/javascripts/scripts.js')

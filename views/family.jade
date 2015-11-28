@@ -1,0 +1,13 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+
+  // this is the form, with id='newComment'
+  form#newComment
+    input(type="text" name="name" placeholder="Enter a name")
+    input(type="text" name="type" placeholder="Enter a type")
+    button(type="submit") Submit!
+
+<!-- Display meme images from /public/family.json [{"url":,"id":},}]

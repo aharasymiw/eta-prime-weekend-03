@@ -9,8 +9,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta http-equiv="Content-Language" content="en">
     <meta name="viewport" content="width=1020">
-    
-    
+
+
     <title>eta-prime-weekend-03/README.md at master · aharasymiw/eta-prime-weekend-03</title>
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
     <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
@@ -58,14 +58,14 @@
 
     <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github-3698fb0adc53fda9a2672a02c3fa3b20b89480f2a47ce38216b21cf3eb5b4750.css" media="all" rel="stylesheet" />
     <link crossorigin="anonymous" href="https://assets-cdn.github.com/assets/github2-912fc0b3ba75b656d2d1687e8be122647344ab57d955de8f6635ee88161cf450.css" media="all" rel="stylesheet" />
-    
-    
-    
+
+
+
 
 
     <meta http-equiv="x-pjax-version" content="ea5f350928a02058c50a6aed5b15b966">
 
-      
+
   <meta name="description" content="Contribute to eta-prime-weekend-03 development by creating an account on GitHub.">
   <meta name="go-import" content="github.com/aharasymiw/eta-prime-weekend-03 git https://github.com/aharasymiw/eta-prime-weekend-03.git">
 
@@ -78,9 +78,9 @@
   <body class="logged_in   env-production macintosh vis-public fork page-blob">
     <a href="#start-of-content" tabindex="1" class="accessibility-aid js-skip-to-content">Skip to content</a>
 
-    
-    
-    
+
+
+
 
 
 
@@ -124,7 +124,7 @@
           </li>
       </ul>
 
-    
+
 <ul class="header-nav user-nav right" id="user-links">
   <li class="header-nav-item">
       <span class="js-socket-channel js-updatable-content"
@@ -147,7 +147,7 @@
 
     <div class="dropdown-menu-content js-menu-content">
       <ul class="dropdown-menu dropdown-menu-sw">
-        
+
 <a class="dropdown-item" href="/new" data-ga-click="Header, create new repository">
   New repository
 </a>
@@ -222,13 +222,13 @@
 </ul>
 
 
-    
+
   </div>
 </div>
 
-      
 
-      
+
+
 
 
     <div id="start-of-content" class="accessibility-aid"></div>
@@ -240,11 +240,11 @@
     <div role="main" class="main-content">
         <div itemscope itemtype="http://schema.org/WebPage">
     <div id="js-repo-pjax-container" class="context-loader-container js-repo-nav-next" data-pjax-container>
-      
+
 <div class="pagehead repohead instapaper_ignore readability-menu experiment-repo-nav">
   <div class="container repohead-details-container">
 
-    
+
 
 <ul class="pagehead-actions">
 
@@ -321,7 +321,7 @@
   </li>
 
   <li>
-    
+
   <div class="js-toggler-container js-social-container starring-container ">
 
     <!-- </textarea> --><!-- '"` --><form accept-charset="UTF-8" action="/aharasymiw/eta-prime-weekend-03/unstar" class="js-toggler-form starred js-unstar-button" data-form-nonce="ab1f8cf5877c16535e58fcb4eebdc7493b427876" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="x1rQ2g5Spymf93xKu7jlLKH4pqdJ7t0ki1yuLUyPQfuuba+ttssnqgey/kYat3twqy1y7R66O6bY8pJhMqxdBw==" /></div>
@@ -393,7 +393,7 @@
 
   </div>
   <div class="container">
-    
+
 <nav class="reponav js-repo-nav js-sidenav-container-pjax js-octicon-loaders"
      role="navigation"
      data-pjax="#js-repo-pjax-container"
@@ -434,14 +434,14 @@
 <div class="container repo-container new-discussion-timeline experiment-repo-nav">
   <div class="repository-content">
 
-    
+
 
 <a href="/aharasymiw/eta-prime-weekend-03/blob/f1cf183fa249b3ed52571eaa6a68f8117d1796b7/README.md" class="hidden js-permalink-shortcut" data-hotkey="y">Permalink</a>
 
 <!-- blob contrib key: blob_contributors:v21:a7110f5ea87f622679c9d7dd4ca0a1dd -->
 
   <div class="file-navigation js-zeroclipboard-container">
-    
+
 <div class="select-menu js-menu-container js-select-menu left">
   <button class="btn btn-sm select-menu-button js-menu-target css-truncate" data-hotkey="w"
     title="master"
@@ -551,7 +551,7 @@ Added readme data">Update README.md</a>
         <strong>1</strong>
          contributor
       </a>
-      
+
     </div>
 
     <div id="blob_contributors_box" style="display:none">
@@ -601,7 +601,7 @@ Added readme data">Update README.md</a>
   </div>
 </div>
 
-  
+
   <div id="readme" class="blob instapaper_body">
     <article class="markdown-body entry-content" itemprop="mainContentOfPage"><h1><a id="user-content-eta-prime-weekend-03" class="anchor" href="#eta-prime-weekend-03" aria-hidden="true"><span class="octicon octicon-link"></span></a>eta-prime-weekend-03</h1>
 
@@ -611,7 +611,7 @@ Added readme data">Update README.md</a>
 
 <p>Pick some memes (safe for work please) and pick some funny or images. If you need some ideas, check out <a href="http://knowyourmeme.com/memes/popular">http://knowyourmeme.com/memes/popular</a></p>
 
-<p>Create a json file named <code>memes.json</code> that will act as a model to store images for your memes in an array. Each object in the array will need the properties <code>url</code> and <code>id</code>. Id is a unique number (but is not necessarily the same as the index of the array) and url is the route (i.e., <code>/public/images/sadkeanu.jpg</code>) it will be served from via <code>express.static</code>.</p>
+<p>Create a json file named <code>memes.json</code> <em>(Where does it live?)</em> that will act as a model to store images for your memes in an array. Each object in the array will need the properties <code>url</code> and <code>id</code>. Id is a unique number (but is not necessarily the same as the index of the array) and url is the route (i.e., <code>/public/images/sadkeanu.jpg</code>) it will be served from via <code>express.static</code>.</p>
 
 <blockquote>
 <p>Hint: Remember to use require to get the data from the JSON files.</p>
@@ -698,9 +698,9 @@ Added readme data">Update README.md</a>
 
 
 
-    
-    
-    
+
+
+
 
     <div id="ajax-error-message" class="flash flash-error">
       <span class="octicon octicon-alert"></span>
@@ -713,8 +713,8 @@ Added readme data">Update README.md</a>
 
       <script crossorigin="anonymous" src="https://assets-cdn.github.com/assets/frameworks-7d180c2bb5779ecb7ab5d04ce8af999e73836dcf0df1a8c44b69c62a1de0732f.js"></script>
       <script async="async" crossorigin="anonymous" src="https://assets-cdn.github.com/assets/github-0430146da495323855e2f392d5359490e0aebbd7562599ad397ec9dedade4e0e.js"></script>
-      
-      
+
+
     <div class="js-stale-session-flash stale-session-flash flash flash-warn flash-banner hidden">
       <span class="octicon octicon-alert"></span>
       <span class="signed-in-tab-flash">You signed in with another tab or window. <a href="">Reload</a> to refresh your session.</span>
@@ -722,4 +722,3 @@ Added readme data">Update README.md</a>
     </div>
   </body>
 </html>
-

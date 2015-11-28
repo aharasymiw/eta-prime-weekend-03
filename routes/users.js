@@ -3,7 +3,14 @@ var router = express.Router();
 
 /* GET users listing. */
 router.get('/', function(req, res, next) {
-  res.send('respond with a resource');
+  res.render('users', { title: 'Awesome Users' });
+  next();
+});
+
+router.get('/:id?', function(req, res) {
+  if (req.params.id !== undefined) {
+    console.log('Our ID is ', req.params.id);
+  }
 });
 
 module.exports = router;

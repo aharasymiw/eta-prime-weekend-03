@@ -6,3 +6,18 @@ body {
 a {
   color: #00B7FF;
 }
+
+header ul {
+  max-width: 50%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+
+}
+
+header ul li {
+  display: inline;
+  margin: auto;
+  text-align: center;
+}
