@@ -6,7 +6,6 @@ var family = require('../public/family.json');
 var fs = require('fs');
 var path = require('path');
 
-/* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('family', { title: 'Awesome Family' });
 });
