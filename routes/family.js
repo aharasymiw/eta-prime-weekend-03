@@ -2,7 +2,7 @@
 // displayed by ../views/family.js
 var express = require('express');
 var router = express.Router();
-var family = require('../public/family.json');
+var family = require('../public/data/family.json');
 var fs = require('fs');
 var path = require('path');
 

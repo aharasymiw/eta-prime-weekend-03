@@ -2,7 +2,7 @@
 // displayed by ../views/memes.js
 var express = require('express');
 var router = express.Router();
-var family = require('../public/memes.json');
+var family = require('../public/data/memes.json');
 var fs = require('fs');
 var path = require('path');
 
