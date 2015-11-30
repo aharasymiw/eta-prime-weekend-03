@@ -1,13 +1,12 @@
-// A route that renders the page alonge with images
-// displayed by ../views/memes.js
 var express = require('express');
 var router = express.Router();
-var family = require('../public/data/memes.json');
-var fs = require('fs');
-var path = require('path');
+var memesComments = require('./memes_comments');
 
 router.get('/', function(req, res, next) {
   res.render('memes', { title: 'Awesome Memes' });
+  next();
 });
+
+router.use(memesComments);
 
 module.exports = router;

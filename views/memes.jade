@@ -1,5 +1,23 @@
 extends layout
 
 block content
+
+  script(src='/javascripts/memes_scripts.js')
+
   h1= title
   p Welcome to #{title}
+
+  main
+    script(id='comment-template', type='text/x-handlebars-template')
+      p {{comment}}
+
+    script(id='images-template', type='text/x-handlebars-template')
+      section.change#previous
+        img(src='{{prevImg}}', alt='{{prevAlt}}', width='150px', height='150px')
+      section.current
+        img(src='{{currentImg}}', alt='{{currentAlt}}')
+        #commentHook
+      section.change#next
+        img(src='{{nextImg}}', alt='{{nextAlt}}', width='150px', height='150px')
+
+    #imgHook

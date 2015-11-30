@@ -8,8 +8,8 @@ var bodyParser = require('body-parser');
 var routes = require('./routes/index');
 
 var users = require('./routes/users');
-var family = require('./routes/family'); // Meme image data [{"url":, "id":},]
-var memes = require('./routes/memes'); // Meme image data [{"url":, "id":},]
+var family = require('./routes/family');
+var memes = require('./routes/memes');
 
 var app = express();
 
@@ -26,7 +26,6 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
 
-//app.use('/users', users);
 app.use('/users', users);
 app.use('/family', family);
 app.use('/memes', memes);

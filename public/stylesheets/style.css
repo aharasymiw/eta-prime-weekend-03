@@ -9,7 +9,8 @@ a {
 
 header ul {
   max-width: 50%;
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -18,11 +19,42 @@ header ul {
 
 header ul li {
   display: inline;
-  margin: auto;
+  margin-right: auto;
+  margin-left: auto;
   text-align: center;
+}
+
+main {
+  margin-bottom: 20px;
+}
+
+#imgHook {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: baseline;
+}
+
+.change {
+  margin-right: auto;
+  margin-left: auto;
+  opacity: .3;
+}
+
+.current {
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+.current img {
+  max-width: 500px;
+  max-height: 500px;
 }
 
 footer {
   position: absolute;
-  bottom: 2em;
+  top: 99%;
+  margin-top: 20px;
 }

@@ -1,13 +1,23 @@
 extends layout
 
 block content
+
+  script(src='/javascripts/family_scripts.js')
+
   h1= title
   p Welcome to #{title}
 
-  // this is the form, with id='newComment'
-  form#newComment
-    input(type="text" name="name" placeholder="Enter a name")
-    input(type="text" name="type" placeholder="Enter a type")
-    button(type="submit") Submit!
+  main
+    script(id='comment-template', type='text/x-handlebars-template')
+      p {{comment}}
 
-<!-- Display meme images from /public/family.json [{"url":,"id":},}]
+    script(id='images-template', type='text/x-handlebars-template')
+      section.change#previous
+        img(src='{{prevImg}}', alt='{{prevAlt}}', width='150px', height='150px')
+      section.current
+        img(src='{{currentImg}}', alt='{{currentAlt}}')
+        #commentHook
+      section.change#next
+        img(src='{{nextImg}}', alt='{{nextAlt}}', width='150px', height='150px')
+
+    #imgHook
