@@ -4,20 +4,26 @@ block content
 
   script(src='/javascripts/family_scripts.js')
 
-  h1= title
-  p Welcome to #{title}
+  script(id='comment-template', type='text/x-handlebars-template')
+    {{#each message}} <p>{{this}}</p> {{/each}}
+
+  script(id='images-template', type='text/x-handlebars-template')
+    section.change#previous
+      img(src='{{prevImg}}', alt='{{prevAlt}}', width='150px', height='150px')
+    section.current
+      img(src='{{currentImg}}', alt='{{currentAlt}}')
+      <h2>Comments about this image:</h2>
+      #commentHook
+    section.change#next
+      img(src='{{nextImg}}', alt='{{nextAlt}}', width='150px', height='150px')
+
+  h1 Welcome to #{title}
 
   main
-    script(id='comment-template', type='text/x-handlebars-template')
-      p {{comment}}
-
-    script(id='images-template', type='text/x-handlebars-template')
-      section.change#previous
-        img(src='{{prevImg}}', alt='{{prevAlt}}', width='150px', height='150px')
-      section.current
-        img(src='{{currentImg}}', alt='{{currentAlt}}')
-        #commentHook
-      section.change#next
-        img(src='{{nextImg}}', alt='{{nextAlt}}', width='150px', height='150px')
-
     #imgHook
+    
+    form
+      label(for='message') New Comment:
+      input(type='text', placeholder='This picture is awesome!', name='message', required)
+      br
+      input(type='submit', value='Submit your comment.')

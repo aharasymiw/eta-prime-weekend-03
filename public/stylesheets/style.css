@@ -7,6 +7,11 @@ a {
   color: #00B7FF;
 }
 
+h1 {
+  text-align: center;
+  line-height: 3em;
+}
+
 header ul {
   max-width: 50%;
   margin-right: auto;
@@ -51,10 +56,4 @@ main {
 .current img {
   max-width: 500px;
   max-height: 500px;
-}
-
-footer {
-  position: absolute;
-  top: 99%;
-  margin-top: 20px;
 }

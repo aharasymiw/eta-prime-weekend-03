@@ -1,11 +1,10 @@
 function populateComments(current) {
   $.ajax({
-    url:'/memes/' + current,
+    url: '/memes/' + current,
   }) .done(function(data) {
     var commentSource = $('#comment-template').html();
     var commentTemplate = Handlebars.compile(commentSource);
-
-    var commentHtml = commentTemplate({comment: data});
+    var commentHtml = commentTemplate({message: data});
     $('#commentHook').html(commentHtml);
   });
 }
@@ -42,7 +41,7 @@ function populateImages(data, current) {
 $(function() {
 
   $.ajax({
-    url:'/data/memes_image_data.json',
+    url: '/data/memes_image_data.json',
   }) .done(function(json) {
 
     var data = json;
@@ -53,6 +52,25 @@ $(function() {
 
     populateImages(data, current);
     populateComments(current);
+
+    $('form').on('submit', function(e) {
+      e.preventDefault();
+
+      var data = {};
+      $(this).serializeArray().map(function(x) {data[x.name] = x.value;});
+      console.log(data);
+
+      $(this)[0].reset();
+
+      $.ajax({
+          type: 'POST',
+          url: '/memes/post',
+          data: {message: data.message, imageId: current}
+        });
+
+      $('#commentHook').append(data.message);
+
+    });
 
     $('body').on('click', '#previous', function() {
       if (current === 0) {
