@@ -58,18 +58,21 @@ $(function() {
 
       var data = {};
       $(this).serializeArray().map(function(x) {data[x.name] = x.value;});
-      console.log(data);
 
       $(this)[0].reset();
 
       $.ajax({
           type: 'POST',
           url: '/family/post',
-          data: {message: data.message, imageId: current}
+          data: {message: data.message, imageId: current},
+          success: function(data, status) {
+            if (status === 'success') {
+              console.log(status);
+              console.log(data[data.length - 1].message);
+              $('#commentHook').append(data[data.length - 1].message);
+            }
+          }
         });
-
-      $('#commentHook').append(data.message);
-
     });
 
     $('body').on('click', '#previous', function() {
